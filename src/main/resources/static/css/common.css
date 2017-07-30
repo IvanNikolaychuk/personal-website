@@ -1,0 +1,60 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 5%;
+    height: 700px;
+    background: url('../img/wall-street.jpg') 40% 10%;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+header .text {
+    padding: 2%;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+a {
+    color: #FAB1C1;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #F06E8A;
+}
+
+/**Article previews*/
+
+main {
+    margin-left: 5%;
+}
+
+.article-preview {
+    margin-top: 2.5%;
+    width: 70%;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.article-preview .name {
+    margin-bottom: 0.2%;
+}
+
+.article-preview .time {
+    font-size: 0.9em;
+    margin-bottom: 0.7%;
+}
+
+.article-preview .preview-text {
+    margin-bottom: 1%;
+    letter-spacing: 0.02em;
+    line-height: 1.4em;
+    color: #6c747d;
+}

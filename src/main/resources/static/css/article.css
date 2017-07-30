@@ -1,0 +1,51 @@
+.back-icon {
+    width: 35px;
+    height: 35px;
+    background-image: url('static/img/back.png');
+    background-size: contain;
+    margin: auto;
+}
+
+header .text:hover {
+    cursor: pointer;
+}
+
+header {
+    font-size: 0.9em;
+}
+
+.icon {
+    margin-bottom: 1%;
+    width: 30px;
+    height: 30px;
+}
+
+.icon .text {
+    padding-top: 3px;
+    letter-spacing: 0.1em;
+    font-size: 1.05em;
+    font-weight: bold;
+    color:#6c747d;
+    margin-left: 40px;
+}
+
+.views {
+    background-image: url('static/img/view.png');
+    background-size: cover;
+}
+
+.like {
+    background-image: url('static/img/like.png');
+    background-size: cover;
+}
+
+.like:hover {
+    cursor: pointer;
+    background-image: url('static/img/like-full.png');
+    background-size: cover;
+}
+
+.article-preview {
+    border: none;
+    margin-bottom: 3%;
+}

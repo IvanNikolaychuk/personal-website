@@ -1,0 +1,14 @@
+.article-preview .read-more {
+    font-size: 0.88em;
+    margin-bottom: 3%;
+    padding: 0.5% 1% 0.5% 1%;
+    background: #fff;
+    color:#EF2D56;
+    border: 1px solid #ef2d56;
+}
+
+.article-preview .read-more:hover {
+    background: #EF2D56;
+    color:#fff;
+    cursor: pointer;
+}
