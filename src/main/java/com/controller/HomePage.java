@@ -1,12 +1,10 @@
 package com.controller;
 
-import com.entity.Article;
 import com.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.xml.ws.Action;
 
 @Controller
 public class HomePage {
@@ -18,7 +16,7 @@ public class HomePage {
     }
 
     @RequestMapping("/")
-    public String process2() {
+    public String process2(@RequestAttribute("lang") String language) {
         return "index.html";
     }
 }
