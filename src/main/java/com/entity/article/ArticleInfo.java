@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Entity(name = "article_info")
@@ -21,13 +21,13 @@ public class ArticleInfo {
     private AtomicInteger watchesCounter;
 
     @Column(name = "creation_date")
-    private Calendar creationDate;
+    private Date creationDate;
 
     public ArticleInfo(String id) {
         this.id = id;
         likesCounter = new AtomicInteger();
         watchesCounter = new AtomicInteger();
-        creationDate = Calendar.getInstance();
+        creationDate = new Date();
     }
 
     // for hibernate needs

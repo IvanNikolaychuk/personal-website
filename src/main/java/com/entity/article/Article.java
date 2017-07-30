@@ -21,11 +21,14 @@ public class Article {
 
     private String content;
 
-    public Article(ArticleInfo articleInfo, Language language, String preview, String content) {
+    private String header;
+
+    public Article(ArticleInfo articleInfo, Language language, String preview, String content, String header) {
         this.articleInfo = articleInfo;
         this.language = language;
         this.preview = preview;
         this.content = content;
+        this.header = header;
     }
 
     // for hibernate needs

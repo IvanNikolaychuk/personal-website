@@ -11,6 +11,8 @@ import java.util.Locale;
 
 @Component
 public class LocalizationFilter implements Filter {
+    public static final String LANGUAGE_ATTRIBUTE = "lang";
+
     private static final String DEFAULT_LANGUAGE = Language.EN.name();
     private static final List<String> KNOWN_LANGUAGES = Arrays.asList(Language.EN.name(), Language.RU.name());
 
@@ -21,7 +23,7 @@ public class LocalizationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         String language = pickLanguage(servletRequest.getLocale());
-        servletRequest.setAttribute("lang", language);
+        servletRequest.setAttribute(LANGUAGE_ATTRIBUTE, language);
 
         filterChain.doFilter(servletRequest, servletResponse);
     }
